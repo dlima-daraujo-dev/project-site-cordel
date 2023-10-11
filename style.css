@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive, sans-serif;
+}
+
+:root {
+    --alfa: white;
+    --beta: black;
+}
+
+.header {
+    color: white;
+    background-color: var(--beta);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps;  /*As letras ficam no formato de letras maiusculas, porem so as maiusculas mesmo que ficam grandes.*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    font-size: 3.5vw;
+    padding-left: 30px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p {
+    padding: 2vw;
+}
+
+#img01 > p, #img02> p {
+    display: inline-block;
+    background-color: rgba(8, 8, 8, 0.427);
+    padding: 2vw;
+}
+
+.normal {
+    background-color: var(--alfa);
+    color: var(--beta);
+}
+
+.image {
+    background-color: var(--beta);
+    color: var(--alfa);
+    box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.488);
+}
+
+#img01 {
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+a {
+    color: var(--alfa);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--beta);
+    color: var(--alfa);
+    text-align: center;
+    padding: 10px 50px;
+}
